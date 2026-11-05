@@ -1,0 +1,146 @@
+{
+  "leadership": [
+    {
+      "name": "Rajesh Agarwal",
+      "quote": "Talent should receive opportunity before it is judged.",
+      "bio": "The visionary architect behind Forever Star India (FSIA). Committed to building a non-discriminatory national and international platform where talent receives opportunity before it is judged.",
+      "img": "https://www.fsia.in/static/media/Rajesh-Agarwal-CEO-FSIA.62467c70a0bb0c9d33a7.jpg",
+      "role": "Founder & CEO, Forever Star India"
+    },
+    {
+      "name": "Jaya Chauhan",
+      "quote": "Creating real opportunities for women in every corner of India.",
+      "bio": "Strategic director overseeing operations and growth. Brings expertise in pageant management, contestant grooming, and community building. Passionate about creating opportunities for women.",
+      "img": "https://www.fsia.in/static/media/Jaya-Chauhan-Director-FSIA.28ac489a966ef9db5df8.jpg",
+      "role": "Director, Forever Star India"
+    }
+  ],
+  "members": [
+    {
+      "name": "Vaibhav Sharma",
+      "group": "Core Team",
+      "role": "Digital Marketing Manager",
+      "img": "https://www.fsia.in/static/media/Vaibhav-Sharma.jpg"
+    },
+    {
+      "name": "Kamlesh Kumawat",
+      "group": "Core Team",
+      "role": "Data Analyst",
+      "img": "https://www.fsia.in/assets_new/img/team/Kamlesh.webp"
+    },
+    {
+      "name": "Yasmeen",
+      "group": "Mentors & Experts",
+      "role": "Mentor",
+      "img": "https://www.fsia.in/static/media/Yasmeen.jpg"
+    },
+    {
+      "name": "Shie Lobo",
+      "group": "Mentors & Experts",
+      "role": "Pageant Director and Choreographer",
+      "img": "https://www.fsia.in/assets_new/img/team/Shie%20Lobo.webp"
+    },
+    {
+      "name": "Sakshi Shekhar",
+      "group": "Mentors & Experts",
+      "role": "Nutritionist & Life Coach",
+      "img": "https://www.fsia.in/static/media/Sakshi-Shekhar-Nutritionist-&-Life-Coach.743ddb067c91475fcc7d.jpg"
+    },
+    {
+      "name": "Saloni Gusain",
+      "group": "Mentors & Experts",
+      "role": "Rampwalk Expert",
+      "img": "https://www.fsia.in/static/media/Saloni-Gusain-Rampwalk-Expert.155f2b2ce2616cf6f96d.jpg"
+    },
+    {
+      "name": "Sunidhi Khare",
+      "group": "Mentors & Experts",
+      "role": "Trainer and Mentor",
+      "img": "https://www.fsia.in/static/media/Sunidhi-Khare-Trainer-and-Mentor.f7b3a5601a10286d5dd6.jpg"
+    },
+    {
+      "name": "Rajlaxmi Chavan",
+      "group": "Mentors & Experts",
+      "role": "Trainer and Mentor",
+      "img": "https://www.fsia.in/static/media/Rajlaxmi-Chavan-Trainer-&-Mentor.868df85dc6ccb17534e7.jpg"
+    },
+    {
+      "name": "Garima Saxena",
+      "group": "Mentors & Experts",
+      "role": "Trainer and Mentor",
+      "img": "https://www.fsia.in/static/media/Garima-Saxena-Trainer-and-Mentor.4bc07128ac56849d822b.jpg"
+    },
+    {
+      "name": "Shilpi Benarjee",
+      "group": "Mentors & Experts",
+      "role": "Trainer and Mentor",
+      "img": "https://www.fsia.in/static/media/Shilpi-Benarjee-Trainer-and-Mentor.775e8467ae9d167e2429.jpg"
+    },
+    {
+      "name": "Anshu Khanna",
+      "group": "Mentors & Experts",
+      "role": "Trainer and Mentor",
+      "img": "https://www.fsia.in/static/media/Anshu-Khanna-Trainer-and-Mentor.57e3bb31faf87b66094d.jpg"
+    },
+    {
+      "name": "Manushi Parmar",
+      "group": "Mentors & Experts",
+      "role": "Trainer and Mentor",
+      "img": "https://www.fsia.in/static/media/Manushi-Parmar-Trainer-&-Mentor.1c965377bd264f6a7b22.jpg"
+    },
+    {
+      "name": "Ajit Singh",
+      "group": "Anchors",
+      "role": "Anchor",
+      "img": "https://www.fsia.in/static/media/Ajit-Singh-Anchor.54cc2a07e71b974d9a14.jpg"
+    },
+    {
+      "name": "Jainika",
+      "group": "Anchors",
+      "role": "Anchor",
+      "img": "https://www.fsia.in/static/media/Jainika-Anchor.b9512d00c1edbefc7c09.jpg"
+    },
+    {
+      "name": "Ujjwal Pareek",
+      "group": "Anchors",
+      "role": "Anchor",
+      "img": "https://www.fsia.in/static/media/Ujjwal%20Pareek.e1a51c8824e7e7794af0.jpeg"
+    },
+    {
+      "name": "Aryan",
+      "group": "Photography & Video",
+      "role": "Photographer and Videographer",
+      "img": "https://www.fsia.in/static/media/Aryan.7557ad9c4f74422a72f7.jpg"
+    },
+    {
+      "name": "Deval",
+      "group": "Photography & Video",
+      "role": "Photographer and Videographer",
+      "img": "https://www.fsia.in/static/media/Deval.ac93b5aa19d442358d9c.jfif"
+    },
+    {
+      "name": "Himanshu",
+      "group": "Photography & Video",
+      "role": "Photographer and Videographer",
+      "img": "https://www.fsia.in/static/media/Himanshu.b5ae62adfed79caa1615.jpg"
+    },
+    {
+      "name": "Sachin",
+      "group": "Photography & Video",
+      "role": "Photographer and Videographer",
+      "img": "https://www.fsia.in/static/media/Sachin.6b457d8b0c30c142d233.jpg"
+    },
+    {
+      "name": "Saurav",
+      "group": "Photography & Video",
+      "role": "Photographer and Videographer",
+      "img": "https://www.fsia.in/static/media/Saurav.2a22aef898bec5202f9a.jpg"
+    },
+    {
+      "name": "Sunil",
+      "group": "Photography & Video",
+      "role": "Photographer and Videographer",
+      "img": "https://www.fsia.in/static/media/Sunil.dbcf2638e8bed855f997.jpg"
+    }
+  ]
+}
