@@ -1,18 +1,22 @@
 import { AnimatePresence, motion, useReducedMotion, useScroll, useSpring } from 'framer-motion';
 import { ChevronDown, Mail, Menu, MessageCircle, Phone, X } from 'lucide-react';
 import { useEffect, useState, type ReactNode } from 'react';
+import { createPortal } from 'react-dom';
 import { Link, NavLink as RouterNavLink, useLocation } from 'react-router-dom';
 import { contact, footerColumns, legal, mainNav } from '../content/site';
+import LogoMark from './LogoMark';
 import { SmartLink } from './ui';
 
-function Logo({ light = true }: { light?: boolean }) {
+function Logo({ light = true, compact = false }: { light?: boolean; compact?: boolean }) {
   return (
-    <Link to="/" className="flex items-center gap-3" aria-label="Forever Star India home">
-      {/* The red star logo the live fsia.in header uses (assets-new/media/logo.gif). */}
-      <img src="/brand/fsia-logo.gif" alt="" width={48} height={48} className="h-12 w-12 shrink-0 drop-shadow-[0_4px_14px_rgba(220,38,38,.45)]" />
+    <Link to="/" className="group flex items-center gap-3" aria-label="Forever Star India home">
+      {/* The red star from the live fsia.in header, redrawn as SVG so it stays sharp. */}
+      <LogoMark
+        className={`shrink-0 drop-shadow-[0_4px_14px_rgba(220,38,38,.45)] transition-all duration-500 group-hover:rotate-[72deg] group-hover:scale-110 motion-reduce:group-hover:rotate-0 ${compact ? 'h-10 w-10' : 'h-12 w-12'}`}
+      />
       <span className="leading-tight">
-        <span className={`block font-display text-lg font-bold uppercase tracking-wide ${light ? 'text-cream' : 'text-ink'}`}>Forever Star India</span>
-        <span className={`block text-[10px] font-semibold uppercase tracking-[.25em] ${light ? 'text-gold-soft' : 'text-gold-deep'}`}>Beauty Pageants & Awards</span>
+        <span className={`block whitespace-nowrap font-display font-bold uppercase tracking-wide ${compact ? 'text-base' : 'text-lg'} ${light ? 'text-cream' : 'text-ink'}`}>Forever Star India</span>
+        <span className={`block whitespace-nowrap text-[10px] font-semibold uppercase ${compact ? 'tracking-[.16em]' : 'tracking-[.25em]'} ${light ? 'text-gold-soft' : 'text-gold-deep'}`}>Beauty Pageants & Awards</span>
       </span>
     </Link>
   );
@@ -48,9 +52,9 @@ function Header() {
   }, [open]);
 
   return (
-    <header className={`fixed inset-x-0 top-[30px] z-50 transition-all duration-300 ${scrolled ? 'bg-ink/85 shadow-lg backdrop-blur-xl' : 'bg-transparent'}`}>
-      <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-4 sm:px-6">
-        <Logo />
+    <header className={`fixed inset-x-0 z-50 transition-all duration-300 ${scrolled ? 'top-0 bg-ink/85 shadow-lg backdrop-blur-xl' : 'top-[30px] bg-transparent'}`}>
+      <div className={`mx-auto flex max-w-7xl items-center justify-between px-4 transition-[height] duration-300 sm:px-6 ${scrolled ? 'h-16' : 'h-[72px]'}`}>
+        <Logo compact={scrolled} />
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Main">
           {mainNav.map((n) =>
             n.to ? (
@@ -125,50 +129,54 @@ function Header() {
         </div>
       </div>
 
-      <AnimatePresence>
-        {open && (
-          <motion.div className="fixed inset-0 z-[70] lg:hidden" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
-            <div className="absolute inset-0 bg-black/60" onClick={() => setOpen(false)} />
-            <motion.aside
-              initial={{ x: '100%' }}
-              animate={{ x: 0 }}
-              exit={{ x: '100%' }}
-              transition={{ type: 'spring', stiffness: 320, damping: 34 }}
-              className="absolute right-0 top-0 flex h-full w-[86%] max-w-sm flex-col overflow-y-auto bg-ink-2 p-5 text-cream"
-              aria-label="Menu"
-            >
-              <div className="mb-6 flex items-center justify-between">
-                <Logo />
-                <button type="button" className="grid h-10 w-10 place-items-center rounded-full hover:bg-white/10" aria-label="Close menu" onClick={() => setOpen(false)}>
-                  <X />
-                </button>
-              </div>
-              {mainNav.map((n) =>
-                n.to ? (
-                  <Link key={n.label} to={n.to} className="border-b border-white/5 py-3 text-base font-medium">
-                    {n.label}
-                  </Link>
-                ) : (
-                  <details key={n.label} className="group border-b border-white/5 py-3">
-                    <summary className="flex cursor-pointer list-none items-center justify-between text-base font-medium">
+      {/* Rendered on <body>: the blurred header would otherwise trap this fixed drawer inside its own box. */}
+      {createPortal(
+        <AnimatePresence>
+          {open && (
+            <motion.div className="fixed inset-0 z-[70] lg:hidden" initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
+              <div className="absolute inset-0 bg-black/60" onClick={() => setOpen(false)} />
+              <motion.aside
+                initial={{ x: '100%' }}
+                animate={{ x: 0 }}
+                exit={{ x: '100%' }}
+                transition={{ type: 'spring', stiffness: 320, damping: 34 }}
+                className="absolute right-0 top-0 flex h-full w-full max-w-sm flex-col overflow-y-auto bg-ink-2 px-4 py-5 text-cream min-[360px]:w-[86%] min-[360px]:px-5"
+                aria-label="Menu"
+              >
+                <div className="mb-6 flex items-center justify-between gap-2">
+                  <Logo compact />
+                  <button type="button" className="grid h-10 w-10 shrink-0 place-items-center rounded-full hover:bg-white/10" aria-label="Close menu" onClick={() => setOpen(false)}>
+                    <X />
+                  </button>
+                </div>
+                {mainNav.map((n) =>
+                  n.to ? (
+                    <Link key={n.label} to={n.to} className="border-b border-white/5 py-3 text-base font-medium">
                       {n.label}
-                      <ChevronDown className="h-4 w-4 transition-transform group-open:rotate-180" />
-                    </summary>
-                    <div className="mt-2 grid gap-1 pl-2">
-                      {(n.items ?? n.groups?.flatMap((g) => g.items) ?? []).map((i) => (
-                        <SmartLink key={i.label} link={i} className="py-1.5 text-sm text-white/70" />
-                      ))}
-                    </div>
-                  </details>
-                ),
-              )}
-              <a href={contact.phoneHref} className="mt-6 flex items-center justify-center gap-2 rounded-full bg-gold px-5 py-3 font-semibold text-ink">
-                <Phone className="h-4 w-4" /> {contact.phone}
-              </a>
-            </motion.aside>
-          </motion.div>
-        )}
-      </AnimatePresence>
+                    </Link>
+                  ) : (
+                    <details key={n.label} className="group border-b border-white/5 py-3">
+                      <summary className="flex cursor-pointer list-none items-center justify-between text-base font-medium">
+                        {n.label}
+                        <ChevronDown className="h-4 w-4 transition-transform group-open:rotate-180" />
+                      </summary>
+                      <div className="mt-2 grid gap-1 pl-2">
+                        {(n.items ?? n.groups?.flatMap((g) => g.items) ?? []).map((i) => (
+                          <SmartLink key={i.label} link={i} className="py-1.5 text-sm text-white/70" />
+                        ))}
+                      </div>
+                    </details>
+                  ),
+                )}
+                <a href={contact.phoneHref} className="mt-6 flex items-center justify-center gap-2 rounded-full bg-gold px-5 py-3 font-semibold text-ink">
+                  <Phone className="h-4 w-4" /> {contact.phone}
+                </a>
+              </motion.aside>
+            </motion.div>
+          )}
+        </AnimatePresence>,
+        document.body,
+      )}
     </header>
   );
 }
@@ -223,7 +231,10 @@ function ScrollProgress() {
 export default function Layout({ children }: { children: ReactNode }) {
   const loc = useLocation();
   const reduce = useReducedMotion();
-  useEffect(() => window.scrollTo(0, 0), [loc.pathname]);
+  // Braces matter: newer browsers return a Promise from scrollTo, and React would call it as a cleanup.
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, [loc.pathname]);
   return (
     <div className="min-h-screen">
       <ScrollProgress />
