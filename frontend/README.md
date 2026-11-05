@@ -51,3 +51,17 @@ npm run build
 
 The components in `src/components` and `src/pages` are plain React. They move into Laravel + Inertia
 (`resources/js`) when the backend is built, with the content coming from the database instead of `src/content`.
+
+## Admin preview (`/admin/`)
+
+`public/admin/` is a copy of the admin redesign from the `form-fsia` repository (`admin-redesign/`, commit
+`3c6c304`). It runs on sample data: on Vercel there is no `api/`, so it stays in preview mode. Edit it in
+`form-fsia` and copy it again; do not edit it here.
+
+```bash
+cp -r ../../form-fsia/admin-redesign/{index.html,css,js} public/admin/
+```
+
+`vercel.json` sends `/admin` to `/admin/` (the admin uses relative paths) and keeps `/admin/` out of the
+website's catch-all rewrite. The admin pages get the stricter headers from the admin's own `vercel.json`.
+
