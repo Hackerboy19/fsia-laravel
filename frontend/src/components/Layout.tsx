@@ -1,5 +1,5 @@
 import { AnimatePresence, motion, useReducedMotion, useScroll, useSpring } from 'framer-motion';
-import { ChevronDown, Mail, Menu, MessageCircle, Phone, Star, X } from 'lucide-react';
+import { ChevronDown, Mail, Menu, MessageCircle, Phone, X } from 'lucide-react';
 import { useEffect, useState, type ReactNode } from 'react';
 import { Link, NavLink as RouterNavLink, useLocation } from 'react-router-dom';
 import { contact, footerColumns, legal, mainNav } from '../content/site';
@@ -8,12 +8,11 @@ import { SmartLink } from './ui';
 function Logo({ light = true }: { light?: boolean }) {
   return (
     <Link to="/" className="flex items-center gap-3" aria-label="Forever Star India home">
-      <span className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-gold-deep to-gold-soft shadow-glow">
-        <Star className="h-5 w-5 fill-ink text-ink" />
-      </span>
+      {/* The red star logo the live fsia.in header uses (assets-new/media/logo.gif). */}
+      <img src="/brand/fsia-logo.gif" alt="" width={48} height={48} className="h-12 w-12 shrink-0 drop-shadow-[0_4px_14px_rgba(220,38,38,.45)]" />
       <span className="leading-tight">
-        <span className={`block font-display text-lg font-bold tracking-wide ${light ? 'text-cream' : 'text-ink'}`}>Forever Star India</span>
-        <span className={`block text-[10px] font-semibold uppercase tracking-[.3em] ${light ? 'text-gold-soft' : 'text-gold-deep'}`}>Pageants & Awards</span>
+        <span className={`block font-display text-lg font-bold uppercase tracking-wide ${light ? 'text-cream' : 'text-ink'}`}>Forever Star India</span>
+        <span className={`block text-[10px] font-semibold uppercase tracking-[.25em] ${light ? 'text-gold-soft' : 'text-gold-deep'}`}>Beauty Pageants & Awards</span>
       </span>
     </Link>
   );
