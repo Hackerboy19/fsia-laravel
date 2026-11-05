@@ -1,0 +1,204 @@
+{
+  "hero": {
+    "eyebrow": "Registrations open • 2026 season",
+    "title": "Forever Star India National Pageant 2026",
+    "text": "Grassroots auditions across 4,000+ Indian cities for Miss, Mrs & Teen India titles. One crowned city winner from every represented city, with a live televised coronation at Zee Studio Jaipur.",
+    "images": [
+      "https://www.fsia.in/uploads/Forever-Star-India-Pageant.webp",
+      "https://www.fsia.in/uploads/Forever-Star-India-award-season-8.webp",
+      "https://www.fsia.in/static/media/grand-finale-setup1.webp"
+    ]
+  },
+  "stats": [
+    {
+      "value": 100000,
+      "suffix": "+",
+      "label": "Dreamers who chose FSIA as their stage"
+    },
+    {
+      "value": 4000,
+      "suffix": "+",
+      "label": "Cities with audition rounds"
+    }
+  ],
+  "jury": [
+    {
+      "name": "Arbaaz Khan",
+      "role": "Celebrity Chief Guest & Dignitary",
+      "text": "Bollywood actor, director and producer gracing the grand stage at Zee Studio Jaipur, felicitating national winners and applauding grassroots talent from across 4,000+ cities.",
+      "img": null
+    },
+    {
+      "name": "Malaika Arora",
+      "role": "Celebrity Guest of Honour & Style Icon",
+      "text": "Indian style icon and celebrated Bollywood personality presenting honours to visionary women, entrepreneurs and crowned titleholders at the Forever Star India coronation.",
+      "img": "https://www.fsia.in/static/media/ml22.e5f4d5434d9182f8ccf8.jpg"
+    },
+    {
+      "name": "VIP Guests & National Jury",
+      "role": "Distinguished Dignitaries & Mentors",
+      "text": "Eminent public figures, veterans and industry stalwarts gracing the stage to crown achievers and support humanitarian initiatives.",
+      "img": "https://www.fsia.in/static/media/guest1.3b03b758489c112db95e.jpg"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Bolly Orbit",
+      "logo": "https://www.fsia.in/static/media/Bolly%20Orbit%20Logo%20(1).dc1aaaef4200c6055ca7.jpg"
+    },
+    {
+      "name": "Bollywood Wave",
+      "logo": "https://www.fsia.in/static/media/Bollywood%20Wave%20Logo.3cadba066f8cdd15e94e.jpg"
+    },
+    {
+      "name": "Celebvalley",
+      "logo": "https://www.fsia.in/static/media/Celebvalley%20Logo.ee03d8b5dbaf9550aa0b.jpg"
+    },
+    {
+      "name": "Extreme Web World",
+      "logo": "https://www.fsia.in/static/media/Extreme%20Web%20World%20Logo.b43a78ec3e17b66b2c6d.jpg"
+    },
+    {
+      "name": "Forever Fashion",
+      "logo": "https://www.fsia.in/static/media/Forever%20Fashion%20Logo.760eb1f638f42d556444.jpg"
+    },
+    {
+      "name": "Forever Leaves",
+      "logo": "https://www.fsia.in/static/media/Forever%20Leaves%20Logo.d355f63514956496a041.jpg"
+    },
+    {
+      "name": "Golden Divine",
+      "logo": "https://www.fsia.in/static/media/Golden%20Divine%20Logo.b65cbb8479b5667673c0.jpg"
+    },
+    {
+      "name": "Intra Life Private Limited",
+      "logo": "https://www.fsia.in/static/media/Intra%20Life%20Private%20Limited.5a43f7b635f99819af7a.jpg"
+    },
+    {
+      "name": "Jaipur Mirror",
+      "logo": "https://www.fsia.in/static/media/Jaipur%20Mirror%20Logo.2d6ffb79310b772f5436.jpg"
+    },
+    {
+      "name": "KP Productions",
+      "logo": "https://www.fsia.in/static/media/KP%20Productions%20Logo.87c85e1536ff633a2761.jpg"
+    },
+    {
+      "name": "Leroy Nutrascience",
+      "logo": "https://www.fsia.in/static/media/Leroy%20Nutrascience.a44747e3e612420759c9.jpg"
+    },
+    {
+      "name": "News Forever",
+      "logo": "https://www.fsia.in/static/media/News%20Forever%20Logo.0f0f3b524daf12136124.jpg"
+    },
+    {
+      "name": "NM Academy",
+      "logo": "https://www.fsia.in/static/media/NM%20Academy%20Logo.dcc7f0894b1418eeee24.jpg"
+    },
+    {
+      "name": "Rajasthan Horizon",
+      "logo": "https://www.fsia.in/static/media/Rajasthan%20Horizon%20Logo.746bd013dbd9b28be579.jpg"
+    },
+    {
+      "name": "Sangri Times",
+      "logo": "https://www.fsia.in/static/media/Sangri%20Times%20Logo.630665438a4edb23dc45.jpg"
+    },
+    {
+      "name": "Sangri Today",
+      "logo": "https://www.fsia.in/static/media/Sangri%20Today%20Logo.2c2fa7461d09b785c355.jpg"
+    },
+    {
+      "name": "Walpar Nutritions",
+      "logo": "https://www.fsia.in/static/media/Walpar%20Nutritions%20Logo.8bb3f713619c18a2f0cd.jpg"
+    }
+  ],
+  "winners": [
+    {
+      "name": "Tanvi Yatin Khairnar",
+      "title": "Miss Teen India 2025",
+      "img": "https://www.fsia.in/static/media/Tanvi%20Yatin%20Khairnar%20-%20Miss%20Teen%20India%202025%20Winner.jpg",
+      "quote": "As a teenager, having access to national media coaching and runway mentors gave me the courage to advocate for education and youth empowerment."
+    },
+    {
+      "name": "Neeharika Bethanapalli",
+      "title": "Miss India 2025",
+      "img": "https://www.fsia.in/static/media/Neeharika%20Bethanapalli%20-%20Miss%20India%202025%20Winner.jpg",
+      "quote": "Standing on the Zee Studio grand stage with the national sash was surreal. FSIA recognized my authentic voice and gave me a platform with nationwide credibility."
+    },
+    {
+      "name": "Anjali Sinha",
+      "title": "Mrs India 2025 (G-1)",
+      "img": "https://www.fsia.in/static/media/Anjali%20Sinha%20-%20Mrs%20India%202025%20Winner%20%28G-1%29.jpg",
+      "quote": "FSIA proved that marriage and motherhood are not pauses, but powerful accelerators of our strength, poise, and societal leadership."
+    },
+    {
+      "name": "Bhumika Songara",
+      "title": "Mrs India 2025 (G-2)",
+      "img": "https://www.fsia.in/static/media/Bhumika%20Songara%20-%20Mrs%20India%202025%20Winner%20(G-2).jpg",
+      "quote": "At 40+, FSIA gave me the grandest runway in India. True beauty is forged in life experience, confidence, and resilience."
+    },
+    {
+      "name": "Dr Srujana Devi",
+      "title": "Miss Forever Universe India 2025",
+      "img": "https://www.fsia.in/static/media/Dr%20Srujana%20Devi%20-%20Miss%20Forever%20Universe%20India%202025.jpg",
+      "quote": "As a medical professional, FSIA provided the bridge between science and advocacy, demonstrating that intelligence and elegance walk hand in hand."
+    },
+    {
+      "name": "Saartha Sameer Gore",
+      "title": "Miss Forever Universe 2025",
+      "img": "https://www.fsia.in/static/media/Saartha%20Sameer%20Gore%20-%20Miss%20Forever%20Universe%202025%20Winner.jpg",
+      "quote": "From Goa’s coastal auditions to the national spotlight, FSIA transformed my self-belief into an unstoppable force on the runway."
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-10-05",
+      "title": "Forever Miss Teen India 2026 – Poise & Runway Masterclass",
+      "type": "Masterclass",
+      "text": "Digital and hybrid ramp-walk masterclass by national choreographers and former titleholders for registered teen contestants."
+    },
+    {
+      "date": "2027-01-08",
+      "end": "2027-01-10",
+      "title": "Grand Finale & Award Ceremony",
+      "type": "Grand Finale",
+      "text": "Grand Finale and Award Ceremony at The Fern Nest by Marriott, Jaipur."
+    }
+  ],
+  "socials": [
+    {
+      "name": "Instagram",
+      "handle": "@fsia_forever",
+      "url": "https://www.instagram.com/fsia_forever/"
+    },
+    {
+      "name": "Facebook",
+      "handle": "@Foreverstarindiaawards",
+      "url": "https://www.facebook.com/Foreverstarindiaawards/"
+    },
+    {
+      "name": "YouTube",
+      "handle": "@foreverstarindiaaward",
+      "url": "https://www.youtube.com/c/foreverstarindiaaward"
+    },
+    {
+      "name": "X",
+      "handle": "@FsiaAward",
+      "url": "https://twitter.com/FsiaAward"
+    },
+    {
+      "name": "Pinterest",
+      "handle": "fsiaaward",
+      "url": "https://in.pinterest.com/fsiaaward/"
+    }
+  ],
+  "trust": [
+    {
+      "title": "Government registered trademark • Class 41",
+      "text": "Forever Star India Awards is an officially protected trademark under Govt. of India intellectual property laws, safeguarding the integrity of all titleholders and awardees."
+    },
+    {
+      "title": "Grand finale arena • Zee Studio Jaipur",
+      "text": "Crowning ceremonies are produced with broadcast cameras, specialised lighting, national media coverage and live streaming."
+    }
+  ]
+}
