@@ -11,3 +11,7 @@
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* FSIA star logo: the "f" cycles gold → white → pink like the live GIF, and ends on gold. */
+@keyframes fsia-mark { 0%, 100% { fill: #f3e3a1; } 33% { fill: #ffffff; } 66% { fill: #f9b4cf; } }
+.fsia-mark-letters { fill: #f3e3a1; animation: fsia-mark 4.5s ease-in-out infinite; }
