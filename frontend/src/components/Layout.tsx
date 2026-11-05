@@ -10,13 +10,14 @@ import { SmartLink } from './ui';
 function Logo({ light = true, compact = false }: { light?: boolean; compact?: boolean }) {
   return (
     <Link to="/" className="group flex items-center gap-3" aria-label="Forever Star India home">
-      {/* The red star from the live fsia.in header, redrawn as SVG so it stays sharp. */}
+      {/* The red star from the live fsia.in header, redrawn as SVG so it stays sharp.
+          Below 360px the full-size wordmark would push the menu button off screen, so it uses the compact size. */}
       <LogoMark
-        className={`shrink-0 drop-shadow-[0_4px_14px_rgba(220,38,38,.45)] transition-all duration-500 group-hover:rotate-[72deg] group-hover:scale-110 motion-reduce:group-hover:rotate-0 ${compact ? 'h-10 w-10' : 'h-12 w-12'}`}
+        className={`shrink-0 drop-shadow-[0_4px_14px_rgba(220,38,38,.45)] transition-all duration-500 group-hover:rotate-[72deg] group-hover:scale-110 motion-reduce:group-hover:rotate-0 ${compact ? 'h-10 w-10' : 'h-10 w-10 min-[360px]:h-12 min-[360px]:w-12'}`}
       />
       <span className="leading-tight">
-        <span className={`block whitespace-nowrap font-display font-bold uppercase tracking-wide ${compact ? 'text-base' : 'text-lg'} ${light ? 'text-cream' : 'text-ink'}`}>Forever Star India</span>
-        <span className={`block whitespace-nowrap text-[10px] font-semibold uppercase ${compact ? 'tracking-[.16em]' : 'tracking-[.25em]'} ${light ? 'text-gold-soft' : 'text-gold-deep'}`}>Beauty Pageants & Awards</span>
+        <span className={`block whitespace-nowrap font-display font-bold uppercase tracking-wide ${compact ? 'text-base' : 'text-base min-[360px]:text-lg'} ${light ? 'text-cream' : 'text-ink'}`}>Forever Star India</span>
+        <span className={`block whitespace-nowrap text-[10px] font-semibold uppercase ${compact ? 'tracking-[.16em]' : 'tracking-[.16em] min-[360px]:tracking-[.25em]'} ${light ? 'text-gold-soft' : 'text-gold-deep'}`}>Beauty Pageants & Awards</span>
       </span>
     </Link>
   );
