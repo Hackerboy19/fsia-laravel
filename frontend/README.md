@@ -55,7 +55,7 @@ The components in `src/components` and `src/pages` are plain React. They move in
 ## Admin preview (`/admin/`)
 
 `public/admin/` is a copy of the admin redesign from the `form-fsia` repository (`admin-redesign/`, commit
-`3c6c304`). It runs on sample data: on Vercel there is no `api/`, so it stays in preview mode. Edit it in
+`ed41fa3`). It runs on sample data: on Vercel there is no `api/` (the firewall answers 403 for it), so it stays in preview mode. Edit it in
 `form-fsia` and copy it again; do not edit it here.
 
 ```bash
